@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flux02"/>
+        <attribute name="authors" value="aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-11 04:51:13 "/>
+        <attribute name="created" value="YWx1bm87OFpQVDBOMzsyMDI1LTA5LTExOyIwNDo0ODoxNiAiOzIyMjg="/>
+        <attribute name="edited" value="YWx1bm87OFpQVDBOMzsyMDI1LTA5LTExOyIwNDo1MToxMyAiOzE7MjMyNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="teste, prova, media" type="Integer" array="False" size=""/>
+            <output expression="&quot;insira a nota do seu teste: &quot;" newline="True"/>
+            <input variable="teste"/>
+            <output expression="&quot;insira a nota da sua prova: &quot;" newline="True"/>
+            <input variable="prova"/>
+            <assign variable="media" expression="teste+prova"/>
+            <output expression="&quot;sua m&#233;dia &#233;: &quot;&amp; media/2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

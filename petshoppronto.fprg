@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="petshoppronto"/>
+        <attribute name="authors" value="pcadu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-29 08:19:35 "/>
+        <attribute name="created" value="cGNhZHU7UENBRFU7MjAyNS0wOS0yOTsiMDc6NDI6MTkgIjsyMDk3"/>
+        <attribute name="edited" value="cGNhZHU7UENBRFU7MjAyNS0wOS0yOTsiMDg6MTk6MzUgIjsxOzIyMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <output expression="&quot;Seja bem-vinde ao Petshop, qual o nome de sue pet?&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Que nome lindo, &quot; &amp; nome" newline="True"/>
+            <output expression="&quot;Temos os seguintes servi&#231;os: apenas banho(Digite 1), banho e tosa(Digite 2).&quot;" newline="True"/>
+            <declare name="ser" type="Integer" array="False" size=""/>
+            <input variable="ser"/>
+            <if expression="ser == 1">
+                <then>
+                    <output expression="&quot;Certo, voc&#234; escolheu apenas banho.&quot;" newline="True"/>
+                    <output expression="&quot;Fazendo espuma...&quot;" newline="True"/>
+                    <output expression="nome &amp; &quot; limpinhe &lt;3&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Certo, voc&#234; escolheu banho e tosa.&quot;" newline="True"/>
+                    <output expression="&quot;Tosando...&quot;" newline="True"/>
+                    <output expression="&quot;Encaminhando &quot; &amp; nome &amp; &quot; para o banho.&quot;" newline="True"/>
+                    <output expression="&quot;Fazendo espuma...&quot;" newline="True"/>
+                    <output expression="nome &amp; &quot; limpinhe &lt;3&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;Encaminhando &quot; &amp; nome &amp; &quot; para secagem.&quot;" newline="True"/>
+            <output expression="&quot;Secando &quot; &amp; nome &amp; &quot;...&quot;" newline="True"/>
+            <output expression="nome &amp; &quot; sequinhe &lt;3&quot;" newline="True"/>
+            <output expression="nome &amp; &quot; ser&#225; encaminhade para antipulga, coloca&#231;&#227;o de coleira e adere&#231;os :)&quot;" newline="True"/>
+            <output expression="&quot;Agora que a beleza e cuidado de &quot; &amp; nome &amp; &quot; foram renovadas, elu ser&#225; encaminhade ao canil.&quot;" newline="True"/>
+            <output expression="&quot;Finalizamos nosso servi&#231;o. &quot; &amp; nome &amp; &quot; est&#225; prontinhe para ser retirade. Obrigade pela prefer&#234;ncia &lt;3&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

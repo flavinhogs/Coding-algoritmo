@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flux 01"/>
+        <attribute name="authors" value="pcadu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-29 08:28:35 "/>
+        <attribute name="created" value="cGNhZHU7UENBRFU7MjAyNS0wOS0yOTsiMDg6MjY6NDUgIjsyMDk5"/>
+        <attribute name="edited" value="cGNhZHU7UENBRFU7MjAyNS0wOS0yOTsiMDg6Mjg6MzUgIjsxOzIyMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite sua nota.&quot;" newline="True"/>
+            <input variable="nota"/>
+            <output expression="&quot;Sua nota &#233;: &quot; &amp; nota" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

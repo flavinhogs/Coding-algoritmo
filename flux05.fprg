@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flux05"/>
+        <attribute name="authors" value="aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-11 06:42:47 "/>
+        <attribute name="created" value="YWx1bm87OFpQVDBOMzsyMDI1LTA5LTExOyIwNTo1NToyNiAiOzIyMjg="/>
+        <attribute name="edited" value="YWx1bm87OFpQVDBOMzsyMDI1LTA5LTExOyIwNjo0Mjo0NyAiOzE7MjMzNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, par, impar, negativo, zero, negpos" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero&quot;" newline="True"/>
+            <input variable="numero"/>
+            <if expression="numero&gt;0">
+                <then>
+                    <output expression="&quot;Seu n&#250;mero &#233; positivo&quot;" newline="True"/>
+                    <if expression="numero % 2==0">
+                        <then>
+                            <output expression="&quot;Seu n&#250;mero &#233; par&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Seu n&#250;mero &#233; impar&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="numero&lt;0">
+                        <then>
+                            <output expression="&quot;Seu n&#250;mero &#233; negativo&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Seu n&#250;mero &#233; zero&quot;" newline="True"/>
+                        </else>
+                    </if>
+                    <assign variable="negpos" expression="numero*(-1)"/>
+                    <if expression="negpos % 2==0">
+                        <then>
+                            <output expression="&quot;Seu n&#250;mero &#233; par&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Seu n&#250;mero &#233; impar&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

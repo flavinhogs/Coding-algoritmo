@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flux06"/>
+        <attribute name="authors" value="aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-11 07:19:17 "/>
+        <attribute name="created" value="YWx1bm87OFpQVDBOMzsyMDI1LTA5LTExOyIwNjo0MzowMSAiOzIyMTk="/>
+        <attribute name="edited" value="YWx1bm87OFpQVDBOMzsyMDI1LTA5LTExOyIwNzoxOToxNyAiOzM7MjM0MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="avaliacao1, avaliacao2, avaliacao3, media, frequencia, provaFinal, mediaFinal" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite a nota da avalia&#231;&#227;o 1&quot;" newline="True"/>
+            <input variable="avaliacao1"/>
+            <output expression="&quot;Digite a nota da avalia&#231;&#227;o 2&quot;" newline="True"/>
+            <input variable="avaliacao2"/>
+            <output expression="&quot;Digite a nota da avalia&#231;&#227;o 3&quot;" newline="True"/>
+            <input variable="avaliacao3"/>
+            <output expression="&quot;Qual a porcentagem da sua frequ&#234;ncia de aulas assistidas?&quot;" newline="True"/>
+            <input variable="frequencia"/>
+            <assign variable="media" expression="(avaliacao1+avaliacao2+avaliacao3)/3"/>
+            <if expression="frequencia&gt;75">
+                <then>
+                    <if expression="media&gt;=7">
+                        <then>
+                            <output expression="&quot;Voc&#234; foi aprovado!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Voc&#234; dever&#225; fazer a prova final!&quot;" newline="True"/>
+                            <output expression="&quot;Digite a nota da prova final&quot;" newline="True"/>
+                            <input variable="provaFinal"/>
+                            <assign variable="mediaFinal" expression="(media+provaFinal)/2"/>
+                            <if expression="mediaFinal&gt;5">
+                                <then>
+                                    <output expression="&quot;Voc&#234; foi aprovado!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Voc&#234; foi reprovado!&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; est&#225; reprovado!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
